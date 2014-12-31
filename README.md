@@ -2,11 +2,10 @@
 
 A collection of problems and solutions mainly from codeforces
 
-## Contains:
- * Implementation
 
 ## Problems to add:
  * Greedy
+ * Implementation
  * Dynamic Programming
  * Graphs
  * Trees
