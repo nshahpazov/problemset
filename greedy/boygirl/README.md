@@ -17,16 +17,27 @@ If it is a female by our hero's method, print "CHAT WITH HER!" (without the quot
 
 ## Sample test(s)
 input
+
 wjmzbmr
+
 output
+
 CHAT WITH HER!
+
 input
+
 xiaodao
+
 output
+
 IGNORE HIM!
+
 input
+
 sevenkplus
+
 output
+
 CHAT WITH HER!
 
 ## Note
