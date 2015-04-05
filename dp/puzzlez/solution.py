@@ -1,5 +1,5 @@
 I = lambda: map(int, raw_input().split())
-n, m= I()
+n, m = I()
 numbers = sorted(I())
 
 print min(k - i for i, k in zip(numbers, numbers[n-1:]))
