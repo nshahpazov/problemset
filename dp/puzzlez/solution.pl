@@ -3,24 +3,13 @@ use strict;
 use warnings;
 use utf8;
 use 5.012;
-
 use List::Util qw[min max];
 
-my $n = <>;
-my $m = <>;
-my @arr;
+my ($n, $m) = split ' ', <>;
+my @arr = sort {$a <=> $b} split ' ', <>;
 
-# read m numbers
-for (1..$m) {
-        my $num = <STDIN>;
-        chomp $num;
-        push @arr, $num;
-}
-
-# sort the @array
-my @sorted = sort {$a <=> $b} @arr;
-my $best = 100000000000;
-for my $i (1..$m - $n) {
-        $best = min $best, ($sorted[$i + $n - 1] - $sorted[$i]);
+my $best = 1e10;
+for my $i (0..$m - $n) {
+        $best = min $best, ($arr[$i + $n - 1] - $arr[$i]);
 }
 print $best;
