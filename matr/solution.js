@@ -12,7 +12,10 @@ module.exports = (function () {
 
   // flow left-way empty strings
   function flowList(list) {
-    // maybe use a priority queue?
+    // return list.reduce(function (accum, curr) {
+      // accum[curr === ' ' ? 'unshift' : 'push'](curr);
+      // return accum;
+    // }, []);
     return list.sort(function (a, b) {
       return b === ' ' ? 1 : 0;
     });
