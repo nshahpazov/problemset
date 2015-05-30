@@ -17,7 +17,7 @@ module.exports = (function () {
       // return accum;
     // }, []);
     return list.sort(function (a, b) {
-      return b === ' ' ? 1 : 0;
+      return b === ' ';
     });
   };
 
